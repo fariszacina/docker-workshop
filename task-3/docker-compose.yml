@@ -1,0 +1,8 @@
+server:
+  build: project
+  ports:
+    - "8087:8087"
+  links:
+    - database
+database:
+  image: postgres
